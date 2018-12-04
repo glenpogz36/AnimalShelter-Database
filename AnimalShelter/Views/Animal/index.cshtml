@@ -1,0 +1,17 @@
+
+@{
+  Layout = "_Layout";
+}
+
+<div class="container">
+@foreach (var animal in Model)
+{
+ <ul>
+ <li>Type: @animal.GetType()</li>
+ <li>Name: @animal.GetName()</li>
+ <li>Sex: @animal.GetSex()</li>
+ <li>Date Of Admittance: @animal.GetDate()</li>
+ <li>Breed: @animal.GetBreed()</li>
+ </ul>
+ }
+</div>
