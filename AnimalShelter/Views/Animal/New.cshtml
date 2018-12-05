@@ -1,0 +1,17 @@
+<h1>Add a new animal to @Model.GetType()</h1>
+
+<form action='/categories/@Model.GetId()/animals' method='post'>
+  <input id='categoryId' name='categoryId' type='hidden' value='@Model.GetId()'>
+  <label for='animalName'>Name</label>
+  <input id='animalName' name='animalName' type='text'><br>
+
+  <label for='animalSex'>Sex</label>
+  <input id='animalSex' name='animalSex' type='text'><br>
+
+  <label for='animalDueDate'>Date of admittance</label>
+  <input id='animalDueDate' name='animalDueDate' type='text'><br>
+
+  <label for='animalBreed'>Breed</label>
+  <input id='animalBreed' name='animalBreed' type='text'><br>
+  <button type='submit'>Add new animal</button>
+</form>

@@ -1,0 +1,12 @@
+<h3>Here are all the Animals in our Shelter:</h3>
+
+<ol>
+@foreach (var animal in @Model["animals"])
+{
+  <li><a href='/categories/@Model["category"].GetId()/animals/@animal.GetId()'>@animal.GetName(), @animal.GetSex(), @animal.GetDueDate(), @animal.GetBreed()</a></li>
+}
+</ol>
+
+<p><a href='/categories/@Model["category"].GetId()/animals/new'>Add a new animal</a></p>
+<p><a href='/categories'>Return to animals list</a></p>
+<p><a href='/'>Return to Main Page</a></p>
